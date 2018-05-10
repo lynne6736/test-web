@@ -1,0 +1,158 @@
+/*color*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #bdbdbd;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(95, 95, 95, 0.79);
+  z-index: 100;
+}
+
+header > .logo {
+  padding: 10px 20px;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+  float: right;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  padding: 0 20px;
+  color: #cfcfcf;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 60px;
+}
+
+ul.menu {
+  padding-right: 60px;
+  position: relative;
+}
+
+ul.menu-list {
+  margin: 2px 0;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+ul.menu-list > li {
+  margin: 1px 0;
+  text-align: left;
+  min-width: 100px;
+  background-color: rgba(95, 95, 95, 0.79);
+  display: block;
+}
+
+.js-menu > li:hover > a {
+  color: #ffffff;
+}
+
+.menu-list > li:hover > a {
+  color: #ffffff;
+}
+
+.js-menu-down:hover .menu-list {
+  display: block;
+}
+
+div.logo {
+  height: 60px;
+  float: left;
+}
+
+div.logo > embed {
+  height: 40px;
+  margin: auto;
+}
+
+section.banner {
+  position: relative;
+}
+
+section.banner:nth-child(even) div.banner-gc {
+  height: 110vh;
+  width: 100%;
+  background-color: #bdbdbd;
+  background-image: url(https://cdn.pixabay.com/photo/2015/07/02/10/23/training-828741_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+section.banner:nth-child(odd) div.banner-gc {
+  height: 90vh;
+  width: 100%;
+  background-image: url(https://cdn.pixabay.com/photo/2015/07/02/10/22/training-828726_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+a.page {
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  z-index: 3;
+}
+
+nav.list-step-group {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  z-index: 4;
+}
+
+nav.list-step-group a {
+  position: relative;
+  display: block;
+  padding: 9px 10px;
+  color: #cfcfcf;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+nav.list-step-group a > span {
+  position: absolute;
+  width: 150px;
+  right: 100%;
+  top: 10px;
+  text-align: right;
+  padding-right: 10px;
+  margin-right: 16px;
+}
+
+nav.list-step-group span::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 1px;
+  left: 100%;
+  top: 8px;
+  background: #cfcfcf;
+  opacity: 0.3;
+}
+
+/*
+li .js-menu-down menu-down:hover .menu-list{
+    display: block;
+}*/
+/*# sourceMappingURL=style.css.map */

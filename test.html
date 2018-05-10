@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+    <div>元素一</div>
+    <div>元素二</div>
+    <div>元素三</div>
+
+    <script type="text/javascript">
+        var $div = $('div');
+        var $first = $div.first();
+        $first.css({
+            'color': 'red'
+        });
+
+        // var $div = $('div'); //jQuery对象
+
+        // for (i = 0; i < 3; i++) {
+
+        //     var div = $div.get(i);
+
+        //     div.style.color = 'red';
+
+        // }
+    </script>
+
+</body>
+
+</html>

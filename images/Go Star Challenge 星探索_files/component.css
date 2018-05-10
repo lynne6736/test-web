@@ -1,0 +1,621 @@
+/*--------------------------------------文字組件1--------------------------------------*/
+/*文字圖片-樣式1*/
+.component-text-img{
+    position: relative;
+    display: inline-block;
+    border: none;
+}
+.component-text-img picture{
+    position: relative;
+    z-index: 2;
+}
+.component-text-line1{
+    position: absolute;
+    width: 201px;
+    left: -30%;
+    top: -60%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    z-index: 1;
+}
+.component-text-line2{
+    position: absolute;
+    width: 258px;
+    right: -28%;
+    top: -45%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    z-index: 1;
+}
+@media screen and (max-width: 767px) {
+    .component-text-img .component-text-imgMain{
+        width: 320px;
+        max-width: 90%;
+    }
+    .component-text-line1{
+        width: 150px;
+        left: -27%;
+        top: -70%;
+    }
+    .component-text-line2{
+        width: 150px;
+        right: -20%;
+        top: -24%;
+    }
+}
+/*文字圖片-樣式1 end*/
+/*文字圖片-樣式2*/
+.component-text-img2{
+    position: relative;
+    display: inline-block;
+    border: none;
+}
+.component-text-img2 picture{
+    position: relative;
+    z-index: 2;
+}
+.component-text-line1-W{
+    position: absolute;
+    width: 193px;
+    left: -29%;
+    top: -58%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    z-index: 1;
+}
+.component-text-line2-W{
+    position: absolute;
+    width: 199px;
+    right: -29%;
+    top: -68%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    z-index: 1;
+}
+@media screen and (max-width: 767px) {
+    .component-text-img2 .component-text-imgMain{
+        width: 320px;
+        max-width: 95%;
+    }
+    .component-text-line1-W{
+        width: 150px;
+        left: -32%;
+        top: -84%;
+    }
+    .component-text-line2-W{
+        width: 150px;
+        right: -28%;
+        top: -69%;
+    }
+}
+/*文字圖片-樣式2 end*/
+
+.component-text-info{
+    display: block;
+    margin-top: -25px;
+}
+.component-text-title{
+    position: relative;
+    font-size: 0.938rem;
+    line-height: 140%;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 0;
+    margin: 0 0 17px 0;
+    z-index: 2;
+}
+
+.component-text-underline{
+    display: block;
+    width: 22px;
+    height: 1px;
+    background: rgba(255,255,255,0.5);
+    margin-bottom: 13px;
+}
+.component-text-content{
+    font-size: 0.813rem;
+    color: #c3c6c8;
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 767px) {
+    .component-text-info{
+        margin-top: -10px;
+    }
+    .component-text-content{
+        width: 320px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/*樣式1，手機版置左，平板手機置中*/
+@media screen and (max-width: 991px) {
+    .component-text-group1{
+        text-align: center;
+    }
+    .component-text-group1 .component-text-underline{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*樣式2，全部置中*/
+.component-text-group2{
+    text-align: center;
+}
+.component-text-group2 .component-text-underline{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*--------------------------------------文字組件1 end--------------------------------------*/
+
+/*--------------------------------------scrolldown--------------------------------------*/
+.conponent-scrolldown{
+    position: absolute;
+    width: 76px;
+    left: 50%;
+    bottom: -52px;
+    margin-left: -38px;
+    display: inline-block;
+    z-index: 3;
+}
+/*--------------------------------------scrolldown end--------------------------------------*/
+
+/*--------------------------------------列表樣式1--------------------------------------*/
+.conponent-list1{
+    position: relative;
+    width: 100%;
+    padding-top: 57%;
+    cursor: pointer;
+}
+.conponent-list1:hover{
+    cursor: default;
+}
+.conponent-list1-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.conponent-list1-date{
+    display: block;
+    font-size: 0.75rem;
+    color: #b5b5b5;
+}
+.conponent-list1-title{
+    position: relative;
+    font-size: 0.938rem;
+    color: #ffffff;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+.conponent-list1-title:after{
+    position: absolute;
+    width: 22px;
+    height: 1px;
+    background: rgba(255,255,255,0.5);
+    left: 2px;
+    bottom: 0; 
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.conponent-list1:hover .conponent-list1-title:after{
+    content: "";
+}
+.conponent-list1-content{
+    font-size: 0.813rem;
+    color: #dfdfdf;
+    padding-bottom: 7px;
+    display: block;
+    height: auto;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+.conponent-list1-link{
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 0;
+    height: 30px;
+    color: #313131;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 5px;
+    background: url(../../images/common_icon/btn-pattern.png) center center no-repeat;
+    -webkit-background-size: 300% auto;
+    background-size: 300% auto; 
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+.conponent-list1-link:hover{
+    color: #313131;
+}
+.conponent-list1-link i{
+    font-size: 0.875rem;
+}
+.conponent-list1-link:after{
+    position: absolute;
+    content: "";
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    border: 1px solid rgba(255,255,255,0.3);
+    left: -3px;
+    top: -3px;
+}
+@media screen and (min-width: 992px) {
+    .conponent-list1{
+        overflow: hidden;
+    }
+    .conponent-list1-text{
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        background: rgba(0,0,0,0.5);
+        color: #ffffff;
+        z-index: 2;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+    .conponent-list1:hover .conponent-list1-text{
+        height: 100%;
+        background: rgba(0,0,0,0.75);
+    }
+    .conponent-list1-full{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+        padding: 10px 15px;    
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+    }
+    .conponent-list1:hover .conponent-list1-full{
+        top: auto;
+        bottom: 0;
+        padding: 35px 15px; 
+    }
+}
+@media screen and (max-width: 991px) {
+    .conponent-list1{
+        padding-top: 62%;
+    }
+    .conponent-list1-img{
+        padding-top: 57%;
+        height: 0;
+    }
+    .conponent-list1-text{
+        position: relative;
+    }
+    .conponent-list1-link{
+        width: 100%;
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto; 
+    }
+}
+/*--------------------------------------列表樣式1 end--------------------------------------*/
+/*--------------------------------------表格樣式1--------------------------------------*/
+.conponent-table1{   
+    width:  100%;
+    background: rgba(255,255,255,0.1);
+}
+.conponent-table1 tr{
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.conponent-table1 tr:nth-child(2n+1){
+    background: rgba(255,255,255,0.02);
+}
+.conponent-table1 td{
+    padding: 12px 15px;
+}
+.conponent-table1-title1{
+    font-size: 0.938rem;
+    color: #ffffff;
+}
+.conponent-table1-title1 td{
+    padding: 10px 15px;
+}
+.conponent-table1-title2{
+    font-size: 0.813rem;
+    color: #c9c9c9;
+}
+.conponent-table1 tbody{
+    color: #c3c6c8;
+    font-size: 0.813rem;
+}
+.conponent-table1 .conponent-table1-icon{
+    width: 37px;
+    padding-right: 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: right center;
+    background-size: 22px;
+}
+.conponent-table1 tr:nth-child(1) .conponent-table1-icon{
+    background-image: url(../../images/common_icon/table-icon1.png);
+}
+.conponent-table1 tr:nth-child(2) .conponent-table1-icon{
+    background-image: url(../../images/common_icon/table-icon2.png);
+}
+.conponent-table1 tr:nth-child(3) .conponent-table1-icon{
+    background-image: url(../../images/common_icon/table-icon3.png);
+}
+.conponent-table1 tr:nth-child(1){
+    color: #ffffff;
+}
+.conponent-table1 tr:nth-child(1) .conponent-table1-3,
+.conponent-table1 tr:nth-child(1) .conponent-table1-4{
+    font-size: 0.938rem;
+}
+.conponent-table1 .conponent-table1-2{
+    padding-left: 10px;
+}
+.conponent-table1-2 small{
+    padding-right: 3px;
+}
+/*--------------------------------------表格樣式1 end--------------------------------------*/
+
+/*--------------------------------------按鈕樣式1--------------------------------------*/
+.conponent-btn1{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #313131;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 11px 5px;
+    background: url(../../images/common_icon/btn-pattern.png) center center no-repeat;
+    -webkit-background-size: 250% auto;
+    background-size: 250% auto; 
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+.conponent-btn1:hover{
+    color: #313131;
+}
+.conponent-btn1 i,
+.conponent-btn1 span{
+    font-size: 1.125rem;
+    vertical-align: middle;
+}
+.conponent-btn1:after{
+    position: absolute;
+    content: "";
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    border: 1px solid rgba(255,255,255,0.3);
+    left: -3px;
+    top: -3px;
+}
+@media screen and (max-width: 768px) {
+    .conponent-btn1{
+        width: 100%;
+        -webkit-background-size: cover;
+        background-size: cover; 
+    }
+}
+/*--------------------------------------按鈕樣式1 end--------------------------------------*/
+/*--------------------------------------IG--------------------------------------*/
+.component-igGroup{
+    position: relative;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0 120px;
+    min-height: 510px;
+}
+.component-igGroup .container{
+    position: relative;
+    z-index: 2;
+}
+.component-ig-title .component-text-line1 {
+    left: -38%;
+    top: -17%;
+}
+.component-ig-title .component-text-line2 {
+    right: -45%;
+    top: -13%;
+}
+.component-ig-title .component-text-info{
+    position: relative;
+    z-index: 2;
+}
+.component-ig-title .component-text-title{
+    display: inline-block;
+}
+.component-ig-title .component-text-underline{
+    display: inline-block;
+    width: 63px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #999999;
+}
+.component-ig-title .component-text-content{
+    display: inline-block;
+    width: auto;
+}
+.component-iglist-group{
+    list-style: none;
+    padding-left: 0;
+}
+.component-iglist{
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background: #333;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid #000000;
+    overflow: hidden;
+    /*cursor: pointer;*/
+}
+.component-ig-link{
+    position: absolute;
+    /*display: block;*/
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    font-size: 0.813rem;
+    z-index: 2;
+}
+.component-ig-full{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+.component-iglist-date{
+    font-style: italic;
+    margin: 0;
+}
+.component-iglist-title{
+    font-size: 0.813rem;
+    margin: 3px 0 10px 0;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+.component-iglist-line{
+    display: block;
+    width: 27px;
+    height: 1px;
+    margin: 0 auto 10px auto;
+    background: #666666;
+}
+.component-ig-link i{
+    display: block;
+    font-size: 1.375rem;
+}
+@media screen and (min-width: 992px) {
+    .component-igGroup{
+        background-image: url(../../images/common_icon/gostar-bg.jpg);
+    }
+    .component-ig-people{
+        position: absolute;
+        width: 830px;
+        height: 750px;
+        left: 55%;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-image: url(../../images/facility/facility1/gostar-people1.png);
+        z-index: 1;
+    }
+    .component-ig-title{
+        padding-top: 100px;
+        padding-left: 40px;
+    }
+    .component-iglist-group.no-gutters{
+        margin: 0 40px;
+        box-shadow: 5px 10px 30px rgba(0,0,0,0.5);
+    }
+    .component-iglist:hover .component-ig-link{
+        top: 0;
+    }
+    .component-ig-link{
+        background: rgba(0,0,0,0.75);
+        top: 100%;
+    }
+    .component-ig-full{
+        color: #b5b5b5;
+    }
+}
+@media screen and (max-width: 991px) {
+    .component-ig-title{
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .component-igGroup{
+        background-image: url(../../images/common_icon/gostar-bg-pad.jpg);
+    }
+    .component-ig-title .component-text-imgMain{
+        width: 300px;
+    }
+    .component-ig-title .component-text-line1 {
+        left: -45%;
+        top: -55%;
+    }
+    .component-ig-title .component-text-line2 {
+        right: -31%;
+        top: -37%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .component-igGroup{
+        background-image: url(../../images/common_icon/gostar-bg-mobile.jpg);
+    }
+    .component-ig-title .component-text-line1 {
+        left: -26%;
+        top: -41%;
+    }
+    .component-ig-title .component-text-line2 {
+        right: -26%;
+        top: 6%;
+    }
+    .component-ig-title .component-text-info{
+        margin-top: -30px;
+    }
+}
+/*--------------------------------------IG end--------------------------------------*/

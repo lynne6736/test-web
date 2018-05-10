@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* -------------字體引用-------------- */
+@font-face {
+    /*font-family: 'Calibri';*/
+    /*src: url(../../fonts/calibril/calibri_0.ttf) format('TrueType');*/
+}
+@font-face {
+    font-family: 'Calibri-L';
+    src: url(../../fonts/calibril/calibril_1.ttf) format('TrueType');
+}
+@font-face {
+    /*font-family: 'Calibri-B';*/
+    /*src: url(../../fonts/calibril/calibrib_0.ttf) format('TrueType');*/
+}
+@font-face {
+    font-family: 'Oswald-M';
+    src: url(../../fonts/Oswald/Oswald-Medium_1.ttf) format('TrueType');
+}
+@font-face {
+    font-family: 'Oswald-L';
+    src: url(../../fonts/Oswald/Oswald-Light_1.ttf) format('TrueType');
+}
+/* -------------字體設定-------------- */
+.font-JH {
+    font-family: "Microsoft JhengHei", sans-serif;/* 正黑 */
+}
+
+.font-Oswald-M {
+    font-family: "Oswald-M", sans-serif;
+}
+.font-Oswald-L {
+    font-family: "Oswald-L", sans-serif;
+}
+.font-Calibri-L {
+    font-family: "Calibri-L", sans-serif;
+}
+
+
+
+/* -------------字體顏色-------------- */
+.font-white-1{
+    color:#ffffff;
+}
+.font-black-1{
+    color:#000000;
+}
+/* -------------字體樣式-------------- */

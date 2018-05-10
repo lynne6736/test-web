@@ -1,0 +1,159 @@
+.footer-info{
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+    padding: 25px 0;
+}
+.footer-info .container{
+    max-width: 950px;
+}
+.footer-logo{
+    float: left;
+    width: 265px;
+}
+.footer-logo a{
+    display: block;
+    width: 140px;
+    height: 39px;
+    margin-top: 10px;
+    background: url(../../images/common_icon/logo.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: center center;
+}
+.footer-listGroup:nth-of-type(2){
+    float: left;
+    width: 265px;
+}
+.footer-listGroup:nth-of-type(3){
+    float: left;
+    width: 150px;
+}
+.footer-listGroup:nth-of-type(4){
+    float: left;
+    width: 100px;
+}
+.footer-title{
+    color: #b7b7b7;
+    font-size: 1.063rem;
+    margin: 0 0 10px 0;
+}
+.footer-content,
+.footer-content:hover,
+.footer-content:focus{
+    display: block;
+    color: #a4a4a4;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+.footer-icon-link{
+    display: inline-block;
+    color: #a4a4a4;
+    font-size: 1.125rem;
+    padding: 0 3px;
+    margin: 0;
+}
+.footer-icon-link:hover,
+.footer-icon-link:focus{
+    color: #ffffff;
+}
+.footer-hotel-logo{
+    float: right;
+    width: 110px;
+}
+.footer-hotel-logo a{
+    display: block;
+    width: 95px;
+    height: 65px;
+    opacity: 0.5;
+    background: url(../../images/common_icon/hotel-logo.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: center center;
+}
+.footer-copyright{
+    padding: 12px 0 10px 0;
+    font-size: 0.75rem;
+    color: #626262;
+}
+@media screen and (max-width: 991px) {
+    .footer-logo{
+        width: 172px;
+    }
+    .footer-listGroup:nth-of-type(2){
+        width: 235px;
+    }
+    .footer-listGroup:nth-of-type(3){
+        width: 118px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-logo{
+        position: relative;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+    .footer-listGroup:nth-of-type(2){
+        text-align: center;
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .footer-listGroup:nth-of-type(3){
+        text-align: center;
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .footer-content{
+        padding-bottom: 5px;
+    }
+    .footer-listGroup:nth-of-type(4){
+        text-align: center;
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .footer-hotel-logo{
+        position: relative;
+        text-align: center;
+        width: 100%;
+        padding-top: 25px;
+    }
+    .footer-logo:after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: 0;
+        opacity: 0.2;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,ffffff+100&0+1,0+100 */
+        background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 1%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+        z-index: 1;
+    }
+    .footer-hotel-logo:after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: 0;
+        opacity: 0.2;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,ffffff+100&0+1,0+100 */
+        background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 1%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+        z-index: 1;
+    }
+    .footer-logo a,
+    .footer-hotel-logo a{
+        margin: 0 auto;
+    }
+}

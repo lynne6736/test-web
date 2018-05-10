@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/*color*/
+
+$primary-50:rgba(95, 95, 95, 0.79);
+$primary-80:darken($primary-50, 8%);
+$secondary-50:#333;
+$text-color:#cfcfcf;
+$text-hover-color:#ffffff;
+$background-color:#bdbdbd;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $background-color;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: $primary-50;
+    z-index: 100;
+    &>.logo {
+        padding: 10px 20px;
+    }
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+    float: right;
+    & li {
+        display: inline-block;
+    }
+    & li a {
+        padding: 0 20px;
+        color: $text-color;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 60px;
+    }
+    &.menu {
+        padding-right: 60px;
+        position: relative;
+    }
+    &.menu-list {
+        margin: 2px 0;
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    &.menu-list>li {
+        margin: 1px 0;
+        text-align: left;
+        min-width: 100px;
+        background-color: $primary-50;
+        display: block;
+    }
+}
+
+.js-menu>li:hover>a {
+    color: $text-hover-color;
+}
+
+.menu-list>li:hover>a {
+    color: $text-hover-color;
+}
+
+.js-menu-down:hover .menu-list {
+    display: block;
+}
+
+div.logo {
+    height: 60px;
+    float: left;
+    &>embed {
+        height: 40px;
+        margin: auto;
+    }
+}
+
+section.banner {
+    position: relative;
+    &:nth-child(even) div.banner-gc {
+        height: 110vh;
+        width: 100%;
+        background-color: $background-color;
+        background-image: url(https://cdn.pixabay.com/photo/2015/07/02/10/23/training-828741_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    &:nth-child(odd) div.banner-gc {
+        height: 90vh;
+        width: 100%;
+        background-image: url(https://cdn.pixabay.com/photo/2015/07/02/10/22/training-828726_960_720.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+a.page {
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    z-index: 3;
+}
+
+nav.list-step-group {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    z-index: 4;
+    & a {
+        position: relative;
+        display: block;
+        padding: 9px 10px;
+        color: $text-color;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    & a>span {
+        position: absolute;
+        width: 150px;
+        right: 100%;
+        top: 10px;
+        text-align: right;
+        padding-right: 10px;
+        margin-right: 16px;
+    }
+    & span::after {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 1px;
+        left: 100%;
+        top: 8px;
+        background: $text-color;
+        opacity: 0.3;
+    }
+}
+
+/*
+li .js-menu-down menu-down:hover .menu-list{
+    display: block;
+}*/

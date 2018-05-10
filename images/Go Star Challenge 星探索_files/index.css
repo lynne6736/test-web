@@ -1,0 +1,483 @@
+/* banner */
+#banner {
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.banner-left{
+	position: absolute;
+	background-image: url(../images/index/banner-left.png);
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	-moz-transition: all 0.4s ease-in;
+	-o-transition: all 0.4s ease-in;
+	-webkit-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+	z-index: 2;
+}
+.banner-right{
+	position: absolute;
+	background-image: url(../images/index/banner-right.png);
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left top;
+	-moz-transition: all 0.4s ease-in;
+	-o-transition: all 0.4s ease-in;
+	-webkit-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+	z-index: 1;
+}
+.banner-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url(../images/index/banner-titlebg.png) center repeat-x;
+	z-index: 2;
+}
+.banner-content{
+	position: absolute;
+	width: auto;
+	height: auto;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	z-index: 3;
+}
+.banner-title{
+	position: relative;
+	z-index: 2;
+}
+.banner-line1{
+	position: absolute;
+	width: 201px;
+	right: 82%;
+	bottom: 34%;
+	z-index: 1;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+}
+.banner-line2{
+	position: absolute;
+	width: 258px;
+	left: 73%;
+	top: 27%;
+	z-index: 1;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+}
+/* banner end */
+/*step1*/
+#step1{
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 570px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.step1-content{
+	display: table-cell;
+	vertical-align: middle;
+}
+/*step1 end*/
+/*step2*/
+#step2{
+	position: relative;
+	padding: 120px 0 0 0;
+	background-image: url(../images/common_icon/bg1.jpg);
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+#step2 .component-text-group2{
+	position: relative;
+	z-index: 2;
+}
+/*輪播圖片*/
+.step2-carousel{
+	position: relative;
+	padding-top: 120px;
+	padding-bottom: 100px;
+	z-index: 1;
+}
+.step2-item{
+	position: relative;
+	display: block;
+	float: left;
+	width: 20%;
+	height: 500px;
+	-moz-transition: all 0s ease-in;
+	-o-transition: all 0s ease-in;
+	-webkit-transition: all 0s ease-in;
+	transition: all 0s ease-in;
+}
+.step2-carousel .slick-list{
+	overflow: initial;
+}
+.step2-item-img{
+	position: absolute;
+	/*visibility: hidden;*/
+	width: calc(100% + 80px);
+	height: auto;
+	left: -40px;
+	top: 0;
+	/*z-index: -1;*/
+}
+.step2-item-canvas{
+	width: 100%;
+	width: calc(100% + 80px);
+	height: auto;
+	left: -40px;
+	top: 0;
+	z-index: 2;
+}
+.step2-item-box{
+	position: relative;
+    width: 100%;
+    height: 92%;
+    left: -1px;
+	transform: skew(-12deg);
+	-webkit-transform: skew(-12deg);
+	-moz-transform: skew(-12deg);
+	-o-transform: skew(-12deg);
+	-ms-transform: skew(-12deg);
+	z-index: 4;
+}
+.step2-item-hover{
+	position: absolute;
+	visibility: hidden;
+	width: calc(100% + 340px);
+	left: -170px;
+	top: -160px;
+	z-index: -1;
+}
+@-webkit-keyframes SlickAnimate {
+	from { -webkit-transform: scale(0.7); }
+	to { -webkit-transform: scale(1);visibility: visible; }
+}
+@-moz-keyframes SlickAnimate {
+	from { -moz-transform: scale(0.7); }
+	to { -moz-transform: scale(1);visibility: visible; }
+}
+@-o-keyframes SlickAnimate {
+	from { -o-transform: scale(0.7); }
+	to { -o-transform: scale(1);visibility: visible; }
+}
+.step2-content-group{
+	position: absolute;
+	display: none;
+	-webkit-background-size: 73px 60px;
+	background-size: 73px 60px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 320px;
+	left: 25%;
+	top: 70%;
+	padding: 25px 0 0 35px;
+	z-index: 3;
+}
+.step2-title{
+	position: relative;
+	font-size: 1.125rem;
+	padding-bottom: 14px;
+	margin-bottom: 13px;
+	color: #ffffff;
+}
+.step2-title:after{
+	position: absolute;
+	content: "";
+	width: 22px;
+	height: 1px;
+	background: #ffffff;
+	opacity: 0.5;
+	left: 0;
+	bottom: 0;
+}
+.step2-title small{
+	font-size: 0.75rem;
+	color: #7d7d7d;
+	padding-left: 5px;
+}
+.step2-content{
+	font-size: 0.75rem;
+	line-height: 150%;
+	color: #c3c6c8;
+}
+/*輪播圖片 end*/
+/*下方說明圖片*/
+.step2-banner{
+	position: relative;
+	width: 100%;
+	height: 439px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	box-shadow: 0 30px 100px rgba(0,0,0,0.7);
+}
+.step2-2-full{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+.step2-2-content{
+	font-size: 0.875rem;
+	color: #ffffff;
+	margin-top: -7px;
+}
+/*下方說明圖片 end*/
+#step2 .scrolldown {
+	bottom: -78px;
+}
+/*step2 end*/
+/*step3*/
+#step3{
+	position: relative;
+	padding: 130px 0 100px 0;
+	background-image: url(../images/index/step3-bg.jpg);
+	background-position: center top;
+	z-index: 1;
+}
+#step3 .component-text-line1 {
+	width: 193px;
+	right: 53%;
+	top: -25%;
+	left: auto;
+	bottom: auto;
+}
+#step3 .component-text-line2 {
+	width: 200px;
+	left: 54%;
+	top: 4%;
+	right: auto;
+	bottom: auto;
+}
+/*列表*/
+.news-list-group{
+	font-size: 0;
+	padding-top: 50px;
+}
+.news-list{
+	padding: 0 7px;
+}
+.news-list:nth-child(1){
+	margin-top: 70px;
+	margin-left: 8.33333333%;
+}
+/*列表end*/
+/*step3 end*/
+/*step4*/
+#step4{
+	position: relative;
+	padding: 100px 0;
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 60%,rgba(0,0,0,1) 100%) , url(../images/common_icon/bg1.jpg);
+	-webkit-background-size: cover;
+	background-size: 100% auto , cover;
+	background-repeat: no-repeat;
+	background-position: center bottom , center top ;
+}
+#step4 .component-text-line1 {
+	left: -31%;
+	top: -17%;
+}
+#step4 .component-text-line2 {
+	right: -9%;
+	top: 30%;
+}
+.step4-content{
+	margin-top: -60px;
+	padding-top: 130px;
+	background-image: url(../images/index/step4-content-bg.png);
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.leftList{
+	width: 200px;
+	float: left;
+	margin-left: 60px;
+}
+.leftList-group{
+	position: relative;
+	width: 100%;
+	padding: 20px 15px 5px 15px;
+	margin-bottom: 20px;
+	background: rgba(255,255,255,0.13);
+}
+.leftList-border1,
+.leftList-border2{
+	position: absolute;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	left: 5px;
+	top: 5px;
+	z-index: 1;
+}
+.leftList-border1:before, 
+.leftList-border1:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.leftList-border1:before {
+	top: 0;
+	width: 1px;
+	height: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+73,ffffff+100&0.18+0,0.06+72,0.18+100 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.02) 72%, rgba(255,255,255,0.02) 73%, rgba(255,255,255,0.18) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.18) 0%,rgba(255,255,255,0.02) 72%,rgba(255,255,255,0.02) 73%,rgba(255,255,255,0.18) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,0.18) 0%,rgba(255,255,255,0.02) 72%,rgba(255,255,255,0.02) 73%,rgba(255,255,255,0.18) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2effffff', endColorstr='#12ffffff',GradientType=0 ); /* IE6-9 */
+}
+.leftList-border1:after {
+	right: 0;
+	width: 100%;
+	height: 1px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+54,ffffff+100&0.18+0,0.01+53,0.18+100 */
+	background: -moz-linear-gradient(left, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.01) 53%, rgba(255,255,255,0.01) 54%, rgba(255,255,255,0.18) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0.18) 0%,rgba(255,255,255,0.01) 53%,rgba(255,255,255,0.01) 54%,rgba(255,255,255,0.18) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(255,255,255,0.18) 0%,rgba(255,255,255,0.01) 53%,rgba(255,255,255,0.01) 54%,rgba(255,255,255,0.18) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2effffff', endColorstr='#12ffffff',GradientType=1 ); /* IE6-9 */
+}
+.leftList-border2:before, 
+.leftList-border2:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.leftList-border2:before {
+	top: 0;
+	width: 1px;
+	height: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+22,ffffff+100&0.18+0,0.01+22,0.18+100 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.01) 22%, rgba(255,255,255,0.18) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.18) 0%,rgba(255,255,255,0.01) 22%,rgba(255,255,255,0.18) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,0.18) 0%,rgba(255,255,255,0.01) 22%,rgba(255,255,255,0.18) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2effffff', endColorstr='#12ffffff',GradientType=0 ); /* IE6-9 */
+}
+.leftList-border2:after {
+	right: 0;
+	width: 100%;
+	height: 1px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+54,ffffff+100&0.18+0,0.01+53,0.18+100 */
+	background: -moz-linear-gradient(left, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.01) 53%, rgba(255,255,255,0.01) 54%, rgba(255,255,255,0.18) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0.18) 0%,rgba(255,255,255,0.01) 53%,rgba(255,255,255,0.01) 54%,rgba(255,255,255,0.18) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(255,255,255,0.18) 0%,rgba(255,255,255,0.01) 53%,rgba(255,255,255,0.01) 54%,rgba(255,255,255,0.18) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2effffff', endColorstr='#12ffffff',GradientType=1 ); /* IE6-9 */
+}
+.leftList-content{
+	position: relative;
+	z-index: 2;
+}
+.leftList-icon{
+	width: 30px;
+}
+.leftList-title{
+	font-size: 0.938rem;
+	letter-spacing: 0.05rem;
+	color: #e5e5e5;
+	margin: 0;
+}
+.leftList-value{
+	font-size: 1.875rem;
+	color: #f9b229;
+}
+.leftList-value small{
+	padding-left: 3px;
+	font-size: 12px;
+	color: #aaaaaa;
+}
+.rightList{
+	width: 290px;
+	margin-bottom: 30px;
+	float: right;
+}
+.conponent-table1{   
+    width:  100%;
+    background: rgba(255,255,255,0.1) url(../images/index/conponent-table-line.png);
+    background-repeat: no-repeat;
+    background-position: 0 32px;
+}
+/*step4 end*/
+/*scrollToTag*/
+.list-step-group{
+	position: fixed;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	z-index: 10;
+}
+.list-step{
+	position: relative;
+	display: block;
+	padding: 9px 10px;
+	color: rgba(255,255,255,0.6);
+	font-size: 12px;
+	transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	-moz-transform: scale(0.95);
+	-o-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+}
+.list-step:hover,
+.list-step:focus,
+.list-step.active{
+	color: #ffffff;
+}
+.list-step span{
+	position: absolute;
+	display: none;
+	width: 150px;
+	right: 100%;
+	top: 8px;
+	margin-right: 16px;
+	padding-right: 10px;
+	text-align: right;
+}
+.list-step span:after{
+	position: absolute;
+	content:"";
+	width: 16px;
+	height: 1px;
+	left: 100%;
+	top: 9px;
+	background: #dfdfdf;
+	opacity: 0.3;
+}
+.list-step.active span,
+.list-step:hover span{
+	display: block;
+}
+/*scrollToTag end*/
