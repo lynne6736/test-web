@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #bdbdbd;
+  background-color: #000000;
   width: 100vw;
   height: 100vh;
 }
@@ -76,7 +76,6 @@ ul.menu-list > li {
 }
 
 div.logo {
-  height: 60px;
   float: left;
 }
 
@@ -92,7 +91,7 @@ section.banner {
 section.banner:nth-child(even) div.banner-gc {
   height: 110vh;
   width: 100%;
-  background-color: #bdbdbd;
+  background-color: #000000;
   background-image: url(https://cdn.pixabay.com/photo/2015/07/02/10/23/training-828741_1280.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -135,6 +134,7 @@ nav.list-step-group a > span {
   width: 150px;
   right: 100%;
   top: 10px;
+  display: none;
   text-align: right;
   padding-right: 10px;
   margin-right: 16px;
@@ -149,6 +149,61 @@ nav.list-step-group span::after {
   top: 8px;
   background: #cfcfcf;
   opacity: 0.3;
+}
+
+nav.list-step-group a:hover {
+  color: #ffffff;
+}
+
+nav.list-step-group a:hover > span {
+  display: block;
+}
+
+nav.list-step-group a:focus > span {
+  display: block;
+}
+
+.footer-info {
+  border-top: 1px solid rgba(95, 95, 95, 0.616);
+  border-bottom: 1px solid rgba(95, 95, 95, 0.616);
+  width: 100vw;
+  height: 60px;
+  color: #cfcfcf;
+  padding: 25px 0;
+}
+
+.footer-info .container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer-info .footer-logo > embed {
+  height: 40px;
+  float: left;
+  margin-right: 100px;
+}
+
+.footer-info .footer-listGroup {
+  width: 180px;
+  float: left;
+  display: inline;
+}
+
+.footer-info div > a {
+  display: block;
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-conpany {
+  height: 40px;
+  color: #cfcfcf;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  font-size: 12px;
 }
 
 /*
